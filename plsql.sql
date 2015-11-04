@@ -1,4 +1,4 @@
---Ê¹ÓÃselect into Îª±äÁ¿¸³Öµ
+--ä½¿ç”¨select into ä¸ºå˜é‡èµ‹å€¼
 declare   
 avg_sal number(8,2);
 begin 
@@ -6,7 +6,7 @@ begin
   select avg(sal) into avg_sal from emp;
     dbms_output.put_line('avg_sal is: '||avg_sal);
 end;
---if then Óï¾ä
+--if then è¯­å¥
 declare
   var_num  number;
   var_name emp.ename%type := '&ename';
@@ -19,7 +19,7 @@ end;
 
 select * from emp;
 
---if-then-else Óï¾ä
+--if-then-else è¯­å¥
 declare
   var_num  number;
   var_name emp.ename%type := '&ename';
@@ -51,7 +51,7 @@ begin
   plus(1000);
   end;
 
----Ç¶Ì×elsif  
+---åµŒå¥—elsif  
 declare
   var_num  number;
   var_name emp.ename%type := '&ename';
